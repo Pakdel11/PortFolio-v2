@@ -1,0 +1,73 @@
+
+.animated-things .shapes{
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.1;
+    width: 20px;
+    height: 20px;
+    background: var(--pinkCC);
+    box-shadow: 0 0 15px var(--pinkCC);
+  }
+  
+  .shape1{
+    animation: shapeAroundHomw 15s infinite;
+    opacity: 0.5;
+    top: -10%;
+    left: 16%;
+  }
+  .shape2{
+    opacity: 1;
+    animation: shapeAroundHomw 7s infinite;
+    right: 2%;
+    bottom: 5%;
+  }
+  .shape3{
+    opacity: 0.6;
+    animation: shapeAroundHomw 9s infinite;
+    top: 50%;
+    left: 30%;
+  }
+  .shape4{
+    opacity: 0.4;
+    animation: shapeAroundHomw 5s infinite;
+    right: 30%;
+    top: 10%;
+  }
+  .shape5{
+    opacity: 0.8;
+    animation: shapeAroundHomw 7s infinite;
+    bottom: 10%;
+  }
+  .shape6{
+    opacity: 0.5;
+    animation: shapeAroundHomw 8s infinite;
+    top: 0;
+    right: 2%;
+  }
+  .shape7{
+    opacity: 0.5;
+    animation: shapeAroundHomw 9s infinite;
+    top: 30%;
+    right: 8%;
+  }
+  .shape8{
+    opacity: 0.5;
+    animation: shapeAroundHomw 8s infinite;
+    top: 70%;
+    right: 50%;
+  }
+  
+  @keyframes shapeAroundHomw {
+    0%{
+      transform: translateX(-20px);
+    }
+    50%{
+      transform: translateX(20px);
+    }
+    100%{
+      transform: translateX(-20px);
+    }
+  
+  }
+  

@@ -1,0 +1,168 @@
+
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.an{
+    position: relative;
+    color: var(--meddleblackCC);
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+.intro-section{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.details-intro-sec{
+    width: 95%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+/* ANIMATION TEXT */
+
+#animated-textt{
+    opacity: 0;
+    color: var(--blueblackCC);
+    animation: deley 0.3s fade;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.DeveloperS{
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--meddleblackCC);
+}
+.DeveloperS span{
+    color: var(--blueblackCC);
+}.an-p{
+    margin-bottom: 1rem;
+    color: var(--meddleDarkFont);
+}
+
+@keyframes deley{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+/*  BTNS */
+
+.btn-open-contact{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.btnWorks{
+    position: absolute;
+    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.transferBtn{
+    position: fixed;
+    transition: 0.3s;
+    margin-left: -15%;
+    margin-bottom: -32%;
+    border-radius: 50px;
+    z-index: 10;
+    transition: 1s;
+}
+.relative{
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.btnGithub{
+    margin-left: 7rem;
+}
+.btnGithub,
+.btnBehance,
+.btnTwitter,
+.btnIn
+{
+    padding: 0.4rem 2rem;
+    font-size: 2rem;
+    color: var(--meddleblackCC);
+    transition: 0.3s;
+    
+}
+
+.btnWorks i{
+  opacity: 0;
+  transition: 0.2s;
+
+}
+.onChangeIcon{
+    width: 20px;
+}
+.btnWorks:hover,
+.btnWorks:active,
+.btnWorks:focus{
+  background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.btnWorks:hover > .fas{
+  transition: 0.3s;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.btnBehance:hover,
+.btnTwitter:hover,
+.btnGithub:hover,
+.btnIn:hover{
+    border-radius: 50px;
+    color: var(--blueblackCC);
+    transition: 0.2s;
+}
+
+
+
+
+/* copied img ´fornt åage */
+
+.intro-img{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-img img{
+    width: auto;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    filter: blur(5px);
+}

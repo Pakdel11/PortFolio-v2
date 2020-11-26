@@ -1,0 +1,180 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.App{
+    font-family: 'Raleway', sans-serif;
+    background: var(--bgCC);
+}
+
+:root{
+    --bgCC:#f4f7ff;
+    --whiteCC: #ffffff;
+    --blackCC: #1a202c;
+    --blueblackCC: #364962;
+    --darkCC: #0b2643;
+    --yellowCC: #ffad28;
+    --pinkCC: #d95877;
+    --lilaCC: #695784;
+    --blueCC: #225cff;
+    --lightPink: #FF6A95;
+    --darkPink: #F073C8;
+    
+    /* meddle colors */
+
+    --meddlepinkCC: #d9587686;
+    --meddleblackCC: #9aa4b0;
+    --meddleDarkFont: #a295bd;
+
+    /* light CC */
+    --lightyellowCC:#ffd369; 
+}
+:root{
+    --whiteBg: #f5f7fc;
+    --white: #ffffff;
+    --darkCC: #52057b;
+    --darkppl: #7e04e8;
+    --meddleppl: #a04ff1;
+    --whiteppl: #bf81ff;
+    --dark: #020202;
+
+    /* btns */
+    --lightBtn: #8c1979;
+    --darkBtn: #510767;
+    /* extra */
+    --lightgreen: lightgreen;
+    
+}
+
+
+::-moz-selection { 
+    background: var(--lightPink);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--lightPink);
+  }
+
+
+/****  scroll   ***/
+.scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-scroll{
+    color: var(--meddleDarkFont);
+    transform: rotate(90deg);
+
+}
+.scroll-i img {
+    width: 35px;
+    margin-top: 50px;
+    animation: scroll 1s cubic-bezier(0.65, -0.55, 0.25, 1.5)infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*****************************
+******************************
+         Go to top btn
+******************************
+******************************/
+#btntop {
+    position: fixed;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: top 0.8s;
+    display: none;
+    transition: 0.2s;
+    background: var(--lightPink);
+    /*background: #fb3681;*/
+    padding: 5px;
+    border-radius: 50px;
+    z-index: 1009;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.089);
+}
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+
+/*////////
+
+    scrollbar 
+
+////////*/
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background: none;
+}
+
+/* ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 20px rgba(110, 97, 97, 0.2);
+} */
+::-webkit-scrollbar-thumb{
+    background: var(--meddleblackCC);
+    border-radius: 50px;
+}

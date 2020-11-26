@@ -1,0 +1,188 @@
+.s-one{
+    padding: 4rem 0;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+
+}
+
+
+.bg-s-one{
+    margin: 2rem 0;
+    padding: 5rem 5rem 0 5rem;
+    width: 70%;
+    background: var(--white);
+    position: relative;
+    border-radius: 0px;
+    background-image: url(/sourcefile/nedladdning.png);
+    background-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.intro-s-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro-text-s-one{
+    position: absolute;
+    top: 0;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+#title-s-one{
+    filter: blur(5px);
+    font-size: 6rem;
+    color: var(--blueblackCC);
+}
+
+.underline-title-s-one{
+    width: 60px;
+    height: 2px;
+    background: var(--lightPink);
+}
+
+/*
+//////
+/////////
+            projects
+/////////
+//////
+*/
+
+.intro-projects-s-one{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+.project{
+    display: flex;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 50px 140px 0 rgba(130,136,171,.2); 
+}
+
+.intro-img-project{
+    width: 100%;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.intro-img-project:hover{
+    filter: brightness(90%);
+    transition: 0.3s;
+}
+/*  upload images */
+.p-img1{
+    background: url(../../sourcefile/projects/rpc.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img2{
+    background: url(../../sourcefile/projects/uilandingpagePreview.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img3{
+    background: url(../../sourcefile/projects/korkortsida.PNG)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img4{
+    background: url(../../sourcefile/projects/timer.PNG)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img5{
+    background: url(../../sourcefile/projects/OBS.PNG)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img6{
+    background: url(../../sourcefile/projects/ecomers.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p-img7{
+    background: url(../../sourcefile/projects/uiAppDesign.PNG)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.details-project{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+#title-details-project{
+    margin: 1rem 0;
+}
+.det-prj{
+    width: 80%;
+    margin: auto;
+    margin: 1rem 0;
+}
+.details-project h1{
+    color: var(--blueblackCC);
+}
+
+.details{
+    color:var(--meddleblackCC);
+    margin-bottom:1rem;
+    line-height: 30px;
+}
+
+.btns-details-project{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#liveDemo{
+    margin-left: 1rem;
+    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
+    padding: 0.51rem 0.5rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    text-decoration:none ;
+    transition: 0.3s;
+}
+#liveDemo:hover{
+    background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
+    box-shadow: 0 7px 10px -10px rgb(130, 136, 171); 
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+
+.loadmore{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.more{
+    color: var(--blueblackCC);
+    cursor: pointer;
+}
+.more:hover{
+    color: var(--meddleblackCC);
+}

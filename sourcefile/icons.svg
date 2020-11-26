@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="angular" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:none;stroke:#E5E5E5;}
+	.st2{opacity:0.5;fill:#E5E5E5;enable-background:new    ;}
+	.st3{fill:#EB4F38;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:9.5178px;}
+	.st6{opacity:0.5;fill:#ED7364;enable-background:new    ;}
+	.st7{fill:#FCFCFC;}
+	.st8{font-family:'OpenSans';}
+	.st9{font-size:55.904px;}
+	.st10{opacity:0.3;fill:#E5E5E5;enable-background:new    ;}
+	.st11{fill:#FAB114;}
+	.st12{font-size:15.168px;}
+	.st13{opacity:0.56;fill:#FACC14;enable-background:new    ;}
+	
+		.st14{opacity:0.56;fill:#E5E5E5;stroke:#FFFFFF;stroke-width:5.07;stroke-linecap:round;stroke-linejoin:round;enable-background:new    ;}
+	.st15{opacity:0.67;fill:#E5E5E5;enable-background:new    ;}
+	.st16{opacity:0.68;fill:#FEB64F;enable-background:new    ;}
+	.st17{font-size:17.4576px;}
+	.st18{opacity:0.56;fill:#E5E5E5;enable-background:new    ;}
+	.st19{fill:#1DBDFF;}
+	.st20{font-size:19.872px;}
+	.st21{opacity:0.5;fill:#F83E8D;enable-background:new    ;}
+	.st22{fill:#F8FDFF;}
+	.st23{font-size:15.296px;}
+	.st24{opacity:0.5;fill:none;stroke:#FFFF00;stroke-width:2;enable-background:new    ;}
+	.st25{opacity:0.5;fill:#81E0FF;enable-background:new    ;}
+	.st26{opacity:0.2;fill:#81E0FF;enable-background:new    ;}
+	.st27{fill:#42BB84;}
+	.st28{opacity:0.5;fill:#41B883;enable-background:new    ;}
+	.st29{opacity:0.5;fill:#34495E;enable-background:new    ;}
+	.st30{fill:#81E0FF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="960.1594" y1="1192" x2="960.1594" y2="314.4825">
+	<stop  offset="0" style="stop-color:#F5F7FC"/>
+	<stop  offset="1" style="stop-color:#EEF4FF"/>
+</linearGradient>
+<path class="st0" d="M-8,721.3c0,0,186.1-167.1,455-144.3s431.9,112.6,667-95s500.7-213.9,810-65s70,723,70,723l-878,52
+	c0,0-996.2-33.9-1008-34s-270-41-270-41l102-395.7H-8z"/>
+<circle id="line" class="st1" cx="960.5" cy="598.5" r="341.5"/>
+<circle id="angular-2" class="st2" cx="413.2" cy="590.3" r="45.2"/>
+<text transform="matrix(0.8876 -0.464 0.4606 0.8876 454.7783 655.6613)" class="st3 st4 st5">ANGU</text>
+<path class="st6" d="M451,566l-37-13l-37,13l8,45l29,16l30-16L451,566z"/>
+<text transform="matrix(1 0 0 1 396.4136 605.5586)" class="st7 st8 st9">A</text>
+<circle id="html-2" class="st10" cx="820.5" cy="285.5" r="28.5"/>
+<text transform="matrix(0.9538 0.3004 -0.3004 0.9538 1076.9115 288.6678)" class="st11 st4 st12">HTML</text>
+<path class="st13" d="M827,262l14,26c0,0,1.7,3.7,0,6s-7.3,10.2-9,11s-14,1-14,1s-0.7,0.4-2-1s-17-23-17-23s-2.1-3.3,0-5
+	s23-15,23-15S825.1,260.3,827,262z"/>
+<path class="st14" d="M824,271l-15,10l5,7l13-7c0,0,7,9.5,0,14c-2.8,2-6.7,1.6-9-1"/>
+<circle id="js-2" class="st15" cx="1364.8" cy="347.6" r="27.8"/>
+<path class="st16" d="M1357,327l30,14l-12,22h-17l-10-12L1357,327z"/>
+<path id="js-3" class="st1" d="M1366,342l-10,1l6,8l8-6l6,7h-9"/>
+<text transform="matrix(0.9605 0.3006 -0.3024 0.9532 1367.3475 418.5425)" class="st11 st4 st17">.JS</text>
+<circle id="php-2" class="st2" cx="1541" cy="794" r="29"/>
+<circle id="css-2" class="st18" cx="1236.5" cy="801.5" r="23.5"/>
+<path id="Rounded_Rectangle_1" class="st19" d="M1227,791h46c2.2,0,4,1.8,4,4v16c0,2.2-1.8,4-4,4h-46c-2.2,0-4-1.8-4-4v-16
+	C1223,792.8,1224.8,791,1227,791z"/>
+<text transform="matrix(1 0 0 1 1235.6807 807.8262)" class="st7 st8 st20">css</text>
+<circle id="Ellipse_1_copy_5" class="st2" cx="714" cy="837" r="28"/>
+<path id="WWW-2" class="st21" d="M696,820h35c1.1,0,2,0.9,2,2v17l0,0h-39l0,0v-17C694,820.9,694.9,820,696,820z"/>
+<path id="WWW-3" class="st21" d="M694,840h39l0,0v2c0,1.1-0.9,2-2,2h-35c-1.1,0-2-0.9-2-2V840L694,840z"/>
+<path id="WWW-4" class="st21" d="M706.5,846h16c0.8,0,1.5,0.7,1.5,1.5l0,0c0,0.8-0.7,1.5-1.5,1.5h-16c-0.8,0-1.5-0.7-1.5-1.5l0,0
+	C705,846.7,705.7,846,706.5,846z"/>
+<path id="WWW-5" class="st21" d="M714.5,842L714.5,842c0.8,0,1.5,0.7,1.5,1.5v3c0,0.8-0.7,1.5-1.5,1.5l0,0c-0.8,0-1.5-0.7-1.5-1.5
+	v-3C713,842.7,713.7,842,714.5,842z"/>
+<text transform="matrix(1 0 0 1 695.2896 833.9785)" class="st22 st8 st23">www</text>
+<path id="lines-2" class="st24" d="M136.5,935.1l54.4,54.4H82.1L136.5,935.1z"/>
+<path id="lines-3" class="st25" d="M1768,67L1768,67c5.5,0,10,4.5,10,10v99c0,5.5-4.5,10-10,10l0,0c-5.5,0-10-4.5-10-10V77
+	C1758,71.5,1762.5,67,1768,67z"/>
+<path id="lines-4" class="st26" d="M1748,151L1748,151c5.5,0,10,4.5,10,10v99c0,5.5-4.5,10-10,10l0,0c-5.5,0-10-4.5-10-10v-99
+	C1738,155.5,1742.5,151,1748,151z"/>
+<text transform="matrix(0.9538 0.3004 -0.3004 0.9538 1046.9907 950.2675)" class="st27 st4 st12">.Vue</text>
+<path class="st28" d="M991.8,919.4l39.4,22.9l0.4-45.6c0,0-6.8,3.9-14.8,8.5c0.1,0.2,1.8,10,0.2,10.9s-9.2-5.7-9.3-5.7L991.8,919.4z
+	"/>
+<path class="st29" d="M1023.5,901.3l-0.2,27.2l-23.7-13.6l7.6-4.3l8.8,5.2l0.2-10.3L1023.5,901.3z"/>
+<circle id="vinkel" class="st2" cx="433.5" cy="741.9" r="19.5"/>
+<path id="vinkel-2" class="st30" d="M433.4,764.8l16-13.8c1.2-1,1.4-2.8,0.4-4s-2.8-1.4-4-0.4c0,0-0.1,0.1-0.1,0.1l-16,13.8
+	c-1.2,1-1.4,2.8-0.4,4s2.8,1.4,4,0.4C433.3,764.9,433.3,764.9,433.4,764.8z M449.3,751c1.2-1,1.3-2.9,0.3-4.1l-13.5-15.6
+	c-1-1.2-2.9-1.3-4.1-0.3c-1.2,1-1.3,2.8-0.3,4l13.5,15.6C446.3,751.9,448.1,752,449.3,751z M421.3,735.3l16-13.8
+	c1.2-1,1.4-2.8,0.4-4s-2.8-1.4-4-0.4c0,0-0.1,0.1-0.1,0.1l-16,13.8c-1.2,1-1.4,2.8-0.4,4s2.8,1.4,4,0.4
+	C421.3,735.4,421.3,735.4,421.3,735.3z M435,751c1.2-1,1.3-2.9,0.3-4.1l-13.5-15.6c-1-1.2-2.8-1.4-4.1-0.3c-1.2,1-1.4,2.8-0.3,4.1
+	c0,0,0,0,0,0l13.5,15.6C431.9,751.9,433.8,752,435,751z"/>
+</svg>

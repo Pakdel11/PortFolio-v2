@@ -1,0 +1,13 @@
+@import './partial/section-one.css';
+@import './partial/about-me.css';
+@import './partial/welcome.css';
+@import './partial/header.css';
+@import './partial/animation.css';
+
+.sections-container{
+    min-width: 100%;
+    margin: auto;
+}
+
+
+
