@@ -8,5 +8,6 @@ ScrollReveal().reveal('.anime', { interval: 400 });
 
 
 // projects 
-ScrollReveal().reveal('.prj1', );
+ScrollReveal().reveal('.project',{interval: 300} );
+ScrollReveal().reveal('.ab-an',{interval: 300} );
 

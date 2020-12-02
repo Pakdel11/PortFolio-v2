@@ -3,6 +3,8 @@
 @import './partial/welcome.css';
 @import './partial/header.css';
 @import './partial/animation.css';
+@import './partial/gfx.css';
+@import './partial/footer.css';
 
 .sections-container{
     min-width: 100%;

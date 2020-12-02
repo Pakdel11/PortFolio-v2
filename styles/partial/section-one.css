@@ -17,7 +17,6 @@
     margin: 2rem 0;
     padding: 5rem 5rem 0 5rem;
     width: 70%;
-    background: var(--white);
     position: relative;
     border-radius: 0px;
     background-image: url(/sourcefile/nedladdning.png);
@@ -68,61 +67,19 @@
 }
 .project{
     display: flex;
-    background: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 50px 140px 0 rgba(130,136,171,.2); 
+    background: linear-gradient(344.05deg, rgb(255, 255, 255) 0%, rgb(230, 237, 252) 100%);
+    box-shadow: rgb(217, 225, 242) 20px 20px 40px, rgba(255, 255, 255, 0.5) -20px -20px 40px, rgb(211, 221, 240) 10px 10px 20px, rgba(255, 255, 255, 0.5) -10px -10px 20px, rgb(255, 255, 255) 2px 2px 4px inset, rgb(211, 221, 240) -2px -2px 4px inset;
+    border-radius: 15px; 
 }
 
 .intro-img-project{
-    width: 100%;
-    height: 200px;
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     transition: 0.3s;
+    box-shadow: 0 30px 80px rgba(8, 95, 226, 0.11);
 }
-
-.intro-img-project:hover{
-    filter: brightness(90%);
-    transition: 0.3s;
-}
-/*  upload images */
-.p-img1{
-    background: url(../../sourcefile/projects/rpc.png)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img2{
-    background: url(../../sourcefile/projects/uilandingpagePreview.png)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img3{
-    background: url(../../sourcefile/projects/korkortsida.PNG)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img4{
-    background: url(../../sourcefile/projects/timer.PNG)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img5{
-    background: url(../../sourcefile/projects/OBS.PNG)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img6{
-    background: url(../../sourcefile/projects/ecomers.png)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.p-img7{
-    background: url(../../sourcefile/projects/uiAppDesign.PNG)no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-
 .details-project{
     flex: 1;
     display: flex;
@@ -130,48 +87,109 @@
     align-items: center;
     height: 100%;
     flex-direction: column;
+    overflow: hidden;
 }
+.details-project:hover > a{
+    transition: 0.3s;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+}
+.details-project:hover > h1{
+    text-decoration: underline;
+    text-decoration-color: var(--lightPink);
+}
+
+/*  upload images */
+.p-img1{
+    background: url(../../sourcefile/projects/rpc.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img2{
+    background: url(../../sourcefile/projects/uilandingpagePreview.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img3{
+    background: url(../../sourcefile/projects/korkortsida.PNG)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img4{
+    background: url(../../sourcefile/projects/timer.PNG)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img5{
+    background: url(../../sourcefile/projects/OBS.PNG)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img6{
+    background: url(../../sourcefile/projects/ecomers.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.p-img7{
+    background: url(../../sourcefile/projects/uiAppDesign.PNG)no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
 #title-details-project{
     margin: 1rem 0;
 }
 .det-prj{
     width: 80%;
-    margin: auto;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
 }
 .details-project h1{
     color: var(--blueblackCC);
 }
 
 .details{
+    padding:1rem;
     color:var(--meddleblackCC);
-    margin-bottom:1rem;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .btns-details-project{
     width: 100%;
+    padding: 1rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
+    transition: all 0.2s ease-in;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
 }
-#liveDemo{
-    margin-left: 1rem;
-    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
-    padding: 0.51rem 0.5rem;
-    font-size: 1rem;
-    color: white;
+.live-prj{
+    text-decoration: none;
+    color: var(--meddleblackCC);
+}
+
+.links-prj i{
+    margin: -0.5rem 0 0 1rem;
+    font-size: 2rem;
+    color: var(--meddleblackCC);
     border-radius: 5px;
     transition: 0.3s;
     border: none;
     text-decoration:none ;
     transition: 0.3s;
 }
-#liveDemo:hover{
-    background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
-    box-shadow: 0 7px 10px -10px rgb(130, 136, 171); 
-    transition: 0.3s;
-    border-radius: 50px;
+
+.links-prj i:hover{
+    color: var(--blueblackCC);
+}
+.live-prj:hover{
+    color: var(--blueblackCC);
 }
 
 
