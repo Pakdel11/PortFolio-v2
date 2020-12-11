@@ -1,0 +1,105 @@
+#konsoltation{
+    width: 100%;
+    height: auto;
+}
+.bg-kons{
+    width: 100%;
+    height: 100%;
+}
+.intro-kons{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-kons{
+    background: linear-gradient(30deg, var(--lightPink), var(--darkPink));
+    padding: 4rem;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 1px 15px 40px 5px rgba(0, 174, 255, 0.075);
+}
+.medal{
+    background: url(../../sourcefile/medal.svg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    transform: rotate(20deg);
+}
+#free-kons{
+    color: var(--meddleblackCC);
+    text-decoration: underline;
+    text-decoration-color: var(--lightPink);
+}
+.kons-ttl{
+    color: var(--blueblackCC);
+    margin-bottom: 1rem;
+}
+.form-kons div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time-kons{
+    margin: 1rem;
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: var(--whiteCC);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    justify-content: center;
+    text-align: center;
+}
+.konshide{
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: var(--whiteCC);
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.5;
+}
+.time-kons:focus,
+.time-kons:hover{
+    transition: 0.2s;
+    background: var(--blueblackCC);
+    color: var(--whiteCC);
+}
+
+.form-kons button{
+    background: var(--whiteCC);
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+
+}
+.form-kons button:hover,
+.form-kons button:active,
+.form-kons button:focus{
+    background: var(--blueblackCC);
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--whiteCC);
+}
+
