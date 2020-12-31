@@ -12,7 +12,7 @@
 }
 
 :root{
-    --bgCC:#f4f7ff;
+    --bgCC:#222831;
     --whiteCC: #ffffff;
     --white: #ffffff;
 
@@ -81,12 +81,12 @@
   
 
 ::-moz-selection { 
-    background: var(--lightPink);
+    background: var(--darkPink);
 }
 
 ::selection {
     color: var(--white);
-    background: var(--lightPink);
+    background: var(--darkPink);
   }
 
 
@@ -147,7 +147,6 @@
     transition: top 0.8s;
     display: none;
     transition: 0.2s;
-    background: var(--lightPink);
     /*background: #fb3681;*/
     padding: 5px;
     border-radius: 50px;
@@ -195,9 +194,9 @@
 
 ////////*/
 ::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
-    background: none;
+    width: 8px;
+    height: 8px;
+    background: var(--bgCC);
 }
 
 /* ::-webkit-scrollbar-track{

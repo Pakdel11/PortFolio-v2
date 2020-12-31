@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background:#222831;
+    font-family: 'Raleway', sans-serif;
+}
+.each-project-container{
+    width: 100%;
+    height: 90vh;
+    background: url(img/previewVS.png)no-repeat, center;
+    background-attachment: fixed;
+}
+h1{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+/* root */
+
+:root{
+    --bgCC:#222831;
+    --whiteCC: #ffffff;
+    --white: #ffffff;
+
+    --blackCC: #1a202c;
+    --blueblackCC: #364962;
+    --darkCC: #0b2643;
+    --yellowCC: #ffad28;
+    --pinkCC: #d95877;
+    --lilaCC: #695784;
+    --blueCC: #225cff;
+    --lightPink: #FF6A95;
+    --darkPink: #F073C8;
+    
+    /* meddle colors */
+
+    --meddlepinkCC: #d9587686;
+    --meddleblackCC: #9aa4b0;
+    --meddleDarkFont: #a295bd;
+
+    /* light CC */
+    --lightyellowCC:#ffd369; 
+}
+
+
+/* 
+/////////
+
+        presentation section
+
+/////////
+*/
+/*  section one */
+
+
+
+.btnWorks{
+    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:all 0.2s;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    z-index: 2;
+}
+.btnWorks:hover,
+.btnWorks:active,
+.btnWorks:focus{
+  background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.btnWorks .fas{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+.btnWorks:hover > .fas{
+    transition: 0.3s;
+    opacity: 1;
+    margin-left: 10px;
+  }
+.each-project-presentation{
+    margin: 10rem 0;
+    width: 100%;
+    height: 100%;
+}
+.each-project-sec-one{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/nedladdning.png);
+}
+
+.circle-epp{
+    background: rgba(7, 11, 41, 0.815);
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 30px 200px -12px #011a3180;
+
+}
+.img-sec-one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    filter: drop-shadow(0 5px 30px #0168c9ad);
+
+}
+
+/* 
+/////////
+
+        section one
+
+/////////
+*/
+/*  section one */
+
+
+
+.each-project-sec-two{
+    height: 100vh;
+    width: 100%;
+}
+.each-p-bg-sec-two{
+    background: url(img/bg-particals.svg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-sec-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.intro-sec-two video{
+    width: 20%;
+    border-radius: 50px;
+}
+.intro-sec-two h1{
+    color: white;
+    position: absolute;
+    top: -20%;
+    width: 50%;
+    margin: auto;
+    filter: blur(2px);
+    font-size: 3rem;
+}
+
+.intro-sec-two .text-intro-for-overview{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 20%;
+    border-left: 1px solid #fb3585;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+/* 
+/////////
+
+        section two
+
+/////////
+*/
+.each-project-sec-three{
+    width: 100%;
+    height: auto;
+}
+.each-p-bg-sec-three{
+    background: #23252e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-sec-three{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 40%;
+    margin: auto;
+}
+
+.intro-sec-three .title-sec-three{
+    color: white;
+    font-size: 4rem;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.intro-sec-three .desc-sec-three{
+    color: gainsboro;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 2em;
+    width: 100%;
+}
+/*  imges */
+
+
+.slide-imgs{
+    width: 100%;
+    /* animation: slideShow 20s linear infinite; */
+}
+
+/* .circle-right-sec-three{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: gradient-fade 50s linear infinite;
+    width: 50%;
+    filter: blur(1px) drop-shadow(0 0 5px white);
+}
+@keyframes slideShow {
+    0%{
+        transform: translateX(0);
+    }50%{
+        transform: translateX(-100%);
+    }100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes gradient-fade {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+
+
+
+  /* 
+/////////
+
+        section four
+
+/////////
+*/
+
+.each-project-sec-four{
+    width: 100%;
+    height: 100vh;
+}
+.each-p-bg-sec-four{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.title-sec-four{
+    color: white;
+    font-size: 3rem;
+    margin: 5rem;
+    width: 100%;
+}
+.color-chose-sec-four{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: url(img/nedladdning.png);
+    margin-bottom: 3rem;
+
+
+}
+
+.under-title{
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px dotted #ffbb33;
+}
+.color-chose-color{
+    display: flex;
+    background: rgb(51, 51, 51);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.color-chose-color div{
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.dark-rosa{
+    background: #FF3E6F;
+}
+.white{
+    background: #FEFEFE;
+}
+.dark-gray{
+background:#8492A6 ;
+}
+.dark-white{
+background:#F5F5FC ;
+}
+.blue{
+background: #3C98FD;
+}
+.black{
+background: #000000;
+}
+.green{
+background: #49E390;
+}
+
+
+
+.intro-sec-four{
+    margin: 3rem 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: url(img/nedladdning.png);
+    
+}
+
+
+.intro-sec-four div{
+    width: 50%;
+}
+.desc-sec-four{
+    color: gainsboro;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 2em;
+    width: 100%;   
+}
+
+
+/* 
+/////
+/////
+
+    absolute btn
+
+/////
+/////
+*/

@@ -1,10 +1,12 @@
 .aboutMe{
     position: relative;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url(/sourcefile/nedladdning.png);
+    background-size: 30px;
 
 }
 
@@ -24,7 +26,6 @@
 }
 
 .intro-abme{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,9 +33,14 @@
     margin: auto;
 }
 .intro-text-abme{
-    background: var(--white);
     padding: 4rem;
     border-radius: 15px;
+}
+.an-p{
+    color: var(--meddleDarkFont);
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 2em;
 }
 
 .prgf-me{
@@ -58,21 +64,19 @@
 }
 .settat{
     display: flex;
-    position: absolute;
-    top: -20%;
-    left: -10%;
+    top: 0;
+    left: 0;
 }
 
 #settat{
     background: url(../../sourcefile/settat.svg)no-repeat;
     background-size: cover;
     background-position: center;
-    width: 90px;
-    height: 160px;
+    width: 30px;
+    height: 40px;
+    margin-bottom: 1rem;
 }
 .intro-img-abme{
-    position: absolute;
-    right: -14%;
     display: flex;
     align-items: center;
     justify-content: center;
