@@ -86,7 +86,7 @@
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition:all 1s cubic-bezier(0.68, -0.85, 0.265, 2);
+    transition:all 0.1s;
 }
 
 .transferBtn{
@@ -142,7 +142,7 @@
 .btnWorks:active,
 .btnWorks:focus{
   background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
-  transition: 0.3s;
+  transition: 0.1s;
   border-radius: 50px;
 }
 

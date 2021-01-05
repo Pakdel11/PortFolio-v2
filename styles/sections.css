@@ -6,6 +6,7 @@
 @import './partial/gfx.css';
 @import './partial/footer.css';
 @import './partial/konsoltation.css';
+@import './mobile.css';
 
 .sections-container{
     min-width: 100%;

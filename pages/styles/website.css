@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:auto;
+}
+
+
+:root{
+    --bgCC:#222831;
+    --whiteCC: #ffffff;
+    --white: #ffffff;
+
+    --blackCC: #1a202c;
+    --blueblackCC: #364962;
+    --darkCC: #0b2643;
+    --yellowCC: #ffad28;
+    --pinkCC: #d95877;
+    --lilaCC: #695784;
+    --blueCC: #225cff;
+    --lightPink: #FF6A95;
+    --darkPink: #F073C8;
+    
+    /* meddle colors */
+
+    --meddlepinkCC: #d9587686;
+    --meddleblackCC: #9aa4b0;
+    --meddleDarkFont: #a295bd;
+
+    /* light CC */
+    --lightyellowCC:#ffd369; 
+    --whiteTableCC: #f2f2f2;
+}
+body{
+    background:#222831;
+    font-family: 'Raleway', sans-serif;
+}
+.each-project-container{
+    width: 100%;
+    height: 90vh;
+    background: url(img/ui/previewVS.png)no-repeat, center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.each-project-detailes{
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.each-project-line{
+    color: var(--whiteTableCC);
+    margin-bottom: 1rem;
+}
+.each-project-line span{
+    color: var(--yellowCC);
+}
+.each-project-title{
+    color: var(--whiteCC);
+    font-weight: 600;
+    word-spacing: 10px;
+    font-size: 30px;
+    margin-bottom: 1rem;
+
+}
+
+.each-project-desc{
+    width: 40%;
+    color: var(--meddleDarkFont);
+    line-height: 25px;
+    word-spacing: 5px;
+}
+
+.project-intro{
+    
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.each-project-img-intro{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background: rgba(23, 85, 155, 0.075);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-bottom: 200px;
+    
+}
+
+
+.forms{
+    display: grid;
+    grid-gap: 1rem;
+    grid-gap: 1rem;
+    position: relative;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+.commingsoon{
+    cursor: text;
+    filter: blur(5px);
+    opacity: 0.5;
+}
+.first-project{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#uiproject{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+.overlay-each-project{
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: rgba(10, 28, 61, 0.555);
+    color: var(--whiteCC);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.first-project:hover > div{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+
+/* 
+////////
+////////
+
+        buttons
+
+////////
+////////
+
+*/
+.btnWorks{
+    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:all 0.2s;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    z-index: 2;
+}
+.btnWorks:hover,
+.btnWorks:active,
+.btnWorks:focus{
+  background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.btnWorks .fas{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+.btnWorks:hover > .fas{
+    transition: 0.3s;
+    opacity: 1;
+    margin-left: 10px;
+  }

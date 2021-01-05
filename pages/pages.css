@@ -1,2 +1,36 @@
-@import 'styles/appointmnet.css';
+@import 'styles/website.css';
+@import 'styles/partial/header.css';
 
+
+
+/*////////
+
+    scrollbar 
+
+////////*/
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background: var(--bgCC);
+}
+
+/* ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 20px rgba(110, 97, 97, 0.2);
+} */
+::-webkit-scrollbar-thumb{
+    background: var(--meddleblackCC);
+    border-radius: 50px;
+}
+
+
+
+::-moz-selection { 
+    background: var(--darkPink);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--darkPink);
+  }
+
+  

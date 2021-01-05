@@ -1,0 +1,226 @@
+
+
+/* 
+//////
+//////
+
+///////////     1024 px
+
+//////
+//////
+
+*/
+
+
+@media only screen and (max-width: 1024px){
+
+
+    /* intro text and animation background */
+    .details-intro-sec{
+        position: absolute;
+        z-index: 2;
+        width: 70%;
+        margin: auto;
+    }
+    .intro-img{
+        position: absolute;
+        width: 50%;
+        opacity: 0.5;
+    }
+    /* menu */
+    .menu-open{
+        width: 100%;
+    }
+
+    /* btn works */
+    .transferBtn{
+        margin-left: -10%;
+        margin-bottom: -80%;
+    }
+    
+    /* divided projects */
+    .divided-project{
+        width: 80%;
+        margin: auto;
+        height: 100vh;
+        
+    }
+    .bg-ddd-prj{
+        width: 100%;
+    }
+    .items-ddd-prj{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10%;
+    }
+
+
+    /* latest project section */
+    .intro-text-s-one{
+        width: 90%;
+    }
+    #primary-title-sections{
+        font-size: 5rem;
+    }
+
+    .bg-s-one{
+        width: 90%;
+    }
+    .intro-s-one{
+        width: 100%;
+    }
+
+    /*  about section */
+    .intro-abme{
+        flex-direction: column-reverse;
+    }
+    .btnGithub{
+        margin-left: 1rem;
+        
+    }
+    .btns-cv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #myName{
+        margin-bottom: 0;
+    }
+    .intro-text-abme{
+        padding: 0;
+        width: 90%;
+    }
+    .download-resume {
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+
+    /*  footer */
+    .footer{
+        height: auto;
+    }
+    .intro-footer{
+        width: 90%;
+    }
+
+}
+
+
+/* 
+//////
+//////
+
+///////////     iphone 7 px
+
+//////
+//////
+
+*/
+
+@media only screen and (max-width: 667px){
+    /* intro text and animation background */
+    .details-intro-sec{
+        position: absolute;
+        z-index: 2;
+        width: 80%;
+        margin: auto;
+    }
+    .section{
+        overflow: hidden;
+    }
+    .intro-img{
+        position: absolute;
+        width: 50%;
+        opacity: 0.5;
+    }
+    #animated-textt{
+        width: 90%;
+        margin: 1rem 0;
+        font-size:2.5rem;
+    }
+    .menu-link{
+        font-size: 2rem;
+    }
+    .btn-open-contact{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .btnWorks {
+        width: auto;
+    }
+    .transferBtn{
+        position: fixed;
+        left: 2%;
+        bottom: 2%;
+        margin: 0;
+    }
+
+    /* divided projects section */
+    .divided-project{
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+        
+    }
+    .bg-ddd-prj{
+        width: 100%;
+        height: 220vh;
+    }
+    .items-ddd-prj{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5%;
+    }
+
+    /* latest projects section */
+    .aboutMe{
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    #primary-title-sections{
+        font-size: 4rem;
+    }
+    .bg-s-one{
+        width: 95%;
+        padding: 1rem;
+    }
+    /* about section */
+    .btns-cv{
+        display: flex;
+        width: 60%;
+        justify-content: flex-start;
+
+    }
+    .btns-cv a{
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .btnGithub{
+        margin: 0;
+    }
+
+    /* footer */
+    .footer{
+        height: 150vh;
+    }
+    .intro-footer{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .footer-text{
+        width: 90%;
+        margin: auto;
+    }
+    .footer-contact {
+        width: 100%;
+        margin: auto;
+    }
+
+}

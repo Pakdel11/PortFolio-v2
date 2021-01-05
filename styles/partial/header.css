@@ -101,7 +101,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: -300%;
+    top: -400%;
     right: 0;
     width: 0;
     height: 0;
@@ -114,6 +114,7 @@
     width: 100vh;
     height: 100vh;
     top: 0;
+    right: 0;
     transition: 0.5s cubic-bezier(0.68, -0.85, 0.165, 2);
 }
 

@@ -223,7 +223,8 @@
     justify-content: flex-start;
 }
 .test-details-project h2{
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 1rem;
     color: var(--lightPink);
     margin-bottom: 1rem;
@@ -231,6 +232,9 @@
 .test-details-project p{
     font-size: 0.8rem;
     font-weight: 300;
+    float: left;
+    word-spacing: 4px;
+    letter-spacing: 1px;
     margin-bottom: 1rem;
 }
 .project-links{

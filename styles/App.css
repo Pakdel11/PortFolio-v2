@@ -80,14 +80,6 @@
   }
   
 
-::-moz-selection { 
-    background: var(--darkPink);
-}
-
-::selection {
-    color: var(--white);
-    background: var(--darkPink);
-  }
 
 
 /****  scroll   ***/
@@ -188,6 +180,18 @@
 }
 
 
+
+
+::-moz-selection { 
+    background: var(--darkPink);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--darkPink);
+  }
+
+  
 /*////////
 
     scrollbar 
