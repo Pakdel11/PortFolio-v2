@@ -251,7 +251,7 @@
 }
 .btnGithub-footer{
     padding: 0.4rem 2rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--meddleblackCC);
     transition: 0.3s;
 }

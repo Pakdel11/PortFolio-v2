@@ -38,13 +38,14 @@
 .logoTl{
     transition: 0.2s ;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--blueblackCC);
     transition: 0.5s cubic-bezier(0.68, -0.85, 0.165, 2);
 
 }
 .logoUtl{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: -4px;
     color: var(--blueblackCC);
     letter-spacing: 1px;
@@ -82,17 +83,17 @@
 
 }
 .tglline{
-    margin: 4px;
+    margin: 3px;
     background: var(--meddleblackCC);
-    width: 45px;
+    width: 28px;
     height: 3px;
     border-radius: 50px;
 }
 .shorterline{
-    width: 30px;
+    width: 25px;
 }
 .lilshort{
-    width: 32px;
+    width: 30px;
 }
 .menu-container{
     position: absolute;
@@ -139,7 +140,6 @@
 }
 
 .menu-link{
-    font-family: 'Raleway', sans-serif;
     cursor: pointer;
     padding:1rem;
     font-size: 5rem;

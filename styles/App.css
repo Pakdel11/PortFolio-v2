@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.App{
-    font-family: 'Raleway', sans-serif;
-}
 
 :root{
     --bgCC:#222831;

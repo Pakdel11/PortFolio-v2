@@ -20,13 +20,13 @@
     font-size: 1rem;
     color: var(--whiteCC);
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     
 }
 .higher-me-btn{
     
     background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
-    color: var(--whiteCC);
+    color: var(--blackCC);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration:none ;
