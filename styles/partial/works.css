@@ -1,5 +1,5 @@
 .s-one{
-    padding: 4rem 0;
+    padding-top: 4rem;
     height: auto;
     width: 100%;
     margin: auto;
@@ -14,7 +14,7 @@
 
 
 .bg-s-one{
-    margin: 2rem 0;
+    margin-top: 2rem;
     padding: 5rem 5rem 0 5rem;
     width: 70%;
     position: relative;
@@ -114,12 +114,12 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 .items-ddd-prj .each:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.2s cubic-bezier(0.68, -1.85, 0.265, 2);
-    box-shadow: 0 30px 100px -12px var(--blueblackCC);
     
 }
 
@@ -135,10 +135,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 0 1rem 0;
 }
 .detailes-ddd-prj h1{
     font-weight: 500;
+    border-bottom: 1px solid var(--pink);
     font-size: 1rem;
+    color: var(--meddleblackCC);
+    text-decoration: none;
     padding: 0 1rem;
 }
 
@@ -168,7 +172,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 0 1rem 5rem 0;
+    margin: 0 1rem 10rem 0;
 }
 .test-project .linked-the-item{
     
@@ -185,11 +189,12 @@
 }
 .img-project{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
 .overlay-project{
+    border-radius: 10px;
     position: absolute;
     width: 100%;
     height: 100%;

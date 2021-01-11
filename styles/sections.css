@@ -3,9 +3,10 @@
 @import './partial/welcome.css';
 @import './partial/header.css';
 @import './partial/animation.css';
-@import './partial/gfx.css';
+@import './partial/adds.css';
 @import './partial/footer.css';
 @import './partial/konsoltation.css';
+@import './partial/switch.css';
 @import './mobile.css';
 
 .sections-container{
@@ -15,3 +16,6 @@
 
 
 
+body{
+    background: var(--whiteCC);
+}

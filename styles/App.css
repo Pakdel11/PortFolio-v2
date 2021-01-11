@@ -8,7 +8,6 @@
 
 .App{
     font-family: 'Raleway', sans-serif;
-    background: var(--bgCC);
 }
 
 :root{
@@ -139,7 +138,7 @@
     transition: top 0.8s;
     display: none;
     transition: 0.2s;
-    /*background: #fb3681;*/
+    background: var(--bgCC);
     padding: 5px;
     border-radius: 50px;
     z-index: 10;
@@ -200,7 +199,7 @@
 ::-webkit-scrollbar{
     width: 8px;
     height: 8px;
-    background: var(--bgCC);
+    background: none;
 }
 
 /* ::-webkit-scrollbar-track{

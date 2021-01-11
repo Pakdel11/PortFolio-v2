@@ -23,8 +23,8 @@ function scrollFunction() {
     if (!backToTop.classList.contains("btnEntrance")) {
       backToTop.classList.add("btnEntrance");
       backToTop.classList.remove("btnExit");
-      logoTextI.style.cssText = "font-size: 0;";
-      logoTextII.style.cssText = "font-size: 0;";
+      logoTextI.style.cssText = "opacity: 0; margin-left: -20%;";
+      logoTextII.style.cssText = "opacity: 0;margin-left: -20%;";
       setTimeout(function () {
         backToTop.style.display = "block";
       }, 250);
@@ -34,8 +34,8 @@ function scrollFunction() {
     if (backToTop.classList.contains("btnEntrance")) {
       backToTop.classList.add("btnExit");
       backToTop.classList.remove("btnEntrance");
-      logoTextI.style.cssText = "font-size: 1.5rem;";
-      logoTextII.style.cssText = "font-size: 1rem;";
+      logoTextI.style.cssText = "opacity: 1;margin-left: 0%;";
+      logoTextII.style.cssText = "opacity: 1;margin-left: 0%;";
       setTimeout(function () {
         backToTop.style.display = "none";
       }, 250);
@@ -91,3 +91,32 @@ function menu(){
 }
 
 menu();
+
+
+// switch them
+
+function switchThem(){
+  var switchBtn = document.getElementById("username");
+  var topBtn = document.getElementById("topBtn");
+  var logo = document.querySelector(".logo");
+  var toggleSwitch = true;
+  
+  switchBtn.addEventListener("click", ()=>{
+    if (toggleSwitch == false) {
+      document.body.style.background = "var(--whiteCC)";
+      topBtn.style.cssText = "background: var(--bgCC);";
+      // for (let i = 0; i < logo.length; i++) {
+      //   logo[i].classList.add("nunactive-logo");
+      // }
+      
+      toggleSwitch = true
+    }
+    else if(toggleSwitch == true){
+      topBtn.style.cssText = "background: none;";
+      document.body.style.background = "var(--bgCC)";
+      toggleSwitch = false
+    }
+  })
+}
+
+switchThem();

@@ -1,0 +1,69 @@
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .logoTl{
+        font-size: 1.2rem;
+    }
+    .logoUtl{
+        font-size: 1rem;
+    }
+
+    /* details */
+    .each-project-desc{
+        width: 100%;
+    }
+
+    /* gallery */
+    .project-intro{
+        width: 90%;
+        margin: auto;
+    }
+    .forms{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* gfx gallery */
+    
+
+}
+
+@media only screen and (max-width: 667px){
+    
+    /* details */
+    .each-project-detailes{
+        height: 50vh;
+    }
+    .each-project-desc{
+        height: auto;
+    }
+    .each-project-title{
+        font-size: 1.5rem;
+    }
+    
+
+    /* gallery */
+    .works .filtering .filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .text-center{
+        display: flex;
+    }
+    .works .filtering .filter span{
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+    }
+    .forms{
+        grid-template-columns: 1fr;
+    }
+}

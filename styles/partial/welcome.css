@@ -16,19 +16,23 @@
     
 }
 .intro-section{
-    width: 60%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 .details-intro-sec{
-    width: 95%;
+    width: 70%;
     flex: 1;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 2;
 }
 
 
@@ -167,27 +171,27 @@
 /* copied img ´fornt åage */
 
 .intro-img{
-    position: relative;
-    flex: 1;
-    width: 50%;
+    position: absolute;
+    right: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .firstImg{
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-items: center;
-    filter: blur(5px);
+    filter: blur(8px);
     animation: float-y-a ease infinite 3s;
 }
 
 
 .secondImg{
     position: absolute;
-    width: 50%;
-    animation: float-y ease infinite 4s;
-    filter: drop-shadow(30px 20px 100px var(--pink)) blur(3px);
+    width: 60%;
+    right: 0;
+    animation: float-y ease infinite 3.5s;
+    filter: drop-shadow(30px 20px 100px rgba(18, 108, 241, 0.315)) blur(3px);
 }
 
 .thirthImg{
@@ -201,15 +205,17 @@
     width: 40%;
     justify-content: center;
     align-items: center;
-    filter: blur(3px);
+    filter: blur(7px);
     animation: float-y-a ease infinite 3s;
 }
 .fivthImg{
     position: absolute;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 100%;
-    animation: float-y ease infinite 3.8s;
+    width: 10%;
+    left: 17%;
+    filter: blur(5px);
+    animation: float-y ease infinite 4.8s;
 }
 
 @keyframes float-y{
