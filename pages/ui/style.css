@@ -65,6 +65,7 @@ h1{
     bottom: 10%;
     left: 5%;
     z-index: 2;
+    transform: rotate(180deg);
 }
 .btnWorks:hover,
 .btnWorks:active,
@@ -158,6 +159,7 @@ h1{
     border-radius: 50px;
 }
 .intro-sec-two h1{
+    display: none;
     color: white;
     position: absolute;
     top: -20%;
@@ -168,6 +170,7 @@ h1{
 }
 
 .intro-sec-two .text-intro-for-overview{
+    display: none;
     color: rgb(255, 255, 255);
     position: absolute;
     right: 20%;
@@ -375,3 +378,74 @@ background: #49E390;
 /////
 /////
 */
+
+
+
+@media only screen and (max-width: 1024px){
+    .intro-sec-two{
+        width: 90%;
+    }
+    .intro-sec-two video{
+        width: 50%;
+    }
+
+    .slide-imgs{
+        width: 100%;
+    }
+    .each-project-sec-three{
+        height: fit-content;
+    }
+    .intro-sec-three .title-sec-three{
+        font-size: 2rem;
+    }
+    .intro-sec-three .desc-sec-three{
+        font-size: 0.8rem;
+    }
+    .each-p-bg-sec-four{
+        width: 80%;
+
+    }
+}
+@media only screen and (max-width: 667px){
+    .intro-sec-two video{
+        border-radius: 20px;
+    }
+    .title-sec-four{
+        font-size: 2rem;
+        text-align: left;
+        margin: 2rem 0;
+    }
+    .intro-sec-three{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        left: 0;
+    }
+    .each-project-sec-four{
+        height: auto;
+
+    }
+    .each-project-sec-four{
+        margin-top: 100px;
+    }
+    .color-chose-color div{
+        margin-left: 0.5rem;
+    }
+    .color-chose-color{
+        margin-top: 2rem;
+    }
+    .color-chose-sec-four{
+        flex-direction: column;
+    }
+    .intro-sec-four{
+        margin: 0;
+        flex-direction: column;
+    }
+    .intro-sec-four img{
+        width: 80%;
+    }
+    .intro-sec-four div{
+        width: 90%;
+    
+    }
+}

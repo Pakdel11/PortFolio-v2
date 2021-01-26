@@ -136,7 +136,7 @@
     transition: top 0.8s;
     display: none;
     transition: 0.2s;
-    background: var(--bgCC);
+    background: rgba(0, 0, 0, 0.315);
     padding: 5px;
     border-radius: 50px;
     z-index: 10;
