@@ -149,6 +149,10 @@ body{
     transition: 0.3s;
 }
 
+.overlay-each-project h3{
+    font-size: 2rem;
+    color:aqua;
+}
 
 
 /* 
@@ -164,7 +168,6 @@ body{
 .btnWorks{
     background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
     padding: 12px 20px;
-    transform: rotate(180deg);
     font-size: 1.2rem;
     color: white;
     border-radius: 5px;
