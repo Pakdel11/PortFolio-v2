@@ -165,6 +165,9 @@
     .firstImg{
         width: 40%;
     }
+    .intro-text-abme{
+        width: 90%;
+    }
     .furthImg{
         width: 10%;
     }
@@ -225,7 +228,6 @@
     }
     .anime{
         padding: 1rem;
-        margin-top: 3rem;
         font-size: 1.5rem;
     }
 
@@ -276,9 +278,27 @@
         display: block;
 
     }
+    .aboutMe{
+        background-size: 20px;
+    }
     .btns-cv a{
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0.5rem 0.5rem;
+    }
+    .settat{
+        margin-top: 3rem;
+
+    }
+    .pfp{
+        width: 20%;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+    .an-p{
+        word-spacing: 1px;
+        letter-spacing: 0px;
+        padding: 1rem 0;
     }
     
     /* footer */
@@ -309,8 +329,11 @@
         position: relative;
         width: 90%;
         height: 100%;
-        margin: auto;
-        margin: 100px 0;
+        margin: 50px auto;
+    }
+    .info-footer p{
+        color: var(--meddleblackCC);
+        text-decoration: none;
     }
 
 

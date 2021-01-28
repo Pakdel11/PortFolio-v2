@@ -7,13 +7,16 @@ const header = document.querySelector(".header-dtl");
 const logoTextI = document.querySelector(".logoTl");
 const logoTextII = document.querySelector(".logoUtl");
 
+
 window.addEventListener("scroll", scrollFunction);
+
 
 function scrollFunction() {
   if (window.pageYOffset > 100) {
     if (!btnWork.classList.contains("transferBtn")) {
       btnWork.classList.add("transferBtn");
     }
+    
   }else if(window.pageYOffset <= 100){
     if (btnWork.classList.contains("transferBtn")) {
       btnWork.classList.remove("transferBtn");
@@ -99,7 +102,7 @@ function switchThem(){
   var switchBtn = document.getElementById("username");
   var topBtn = document.getElementById("topBtn");
   var logo = document.querySelector(".logo");
-  var toggleSwitch = true;
+  var toggleSwitch = false;
   
   switchBtn.addEventListener("click", ()=>{
     if (toggleSwitch == false) {
@@ -120,3 +123,5 @@ function switchThem(){
 }
 
 switchThem();
+
+

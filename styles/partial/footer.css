@@ -25,6 +25,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .footer-text{
     flex: 1;
@@ -90,9 +91,9 @@
     border: none;
     border-radius: 5px;
     padding-top: 10px;
-    background: var(--whiteTableCC);
+    background: var(--blueblackCC);
     font-family: 'Raleway', sans-serif;
-    color: var(--blueblackCC);
+    color: var(--white);
     outline: none;
     transition: 0.3s;
     width: 100%;
@@ -100,13 +101,15 @@
 }
 
 #msg{
-    background: var(--whiteTableCC);
+    letter-spacing: 2px;
+    background: var(--blueblackCC);
     width: 100%;
+    font-weight: 200;
     height: 10em;
     padding: 0.5rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    color: var(--blueblackCC);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     outline: none;
@@ -137,7 +140,7 @@
     position: absolute;
     bottom: 12%;
     left: 2%;
-    color: var(--meddleblackCC);
+    color: var(--white);
     font-weight: 300;
 }
 .password label span{
@@ -146,7 +149,7 @@
     top: 25%;
     left: 2%;
     font-weight: 300;
-    color: var(--meddleblackCC);
+    color: var(--white);
 }
 
 .username input:focus + .label-name .content-name,
