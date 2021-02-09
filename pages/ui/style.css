@@ -156,7 +156,8 @@ h1{
     font-size: 4rem;
     font-weight: 700;
     background: -webkit-linear-gradient(var(--pinkCC), var(--darkPink));
-    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     filter: brightness(1px);
 }
 
