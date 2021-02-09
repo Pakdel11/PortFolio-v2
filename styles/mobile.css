@@ -234,9 +234,8 @@
     /* divided projects section */
     .divided-project{
         width: 90%;
-        margin: auto;
         height: auto;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
 
     }
     .bg-ddd-prj{
@@ -280,6 +279,7 @@
     }
     .aboutMe{
         background-size: 20px;
+        padding: 5rem 0;
     }
     .btns-cv a{
         font-size: 1rem;
@@ -290,6 +290,7 @@
 
     }
     .pfp{
+        display: none;
         width: 20%;
         position: absolute;
         right: 10%;
