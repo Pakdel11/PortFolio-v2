@@ -83,7 +83,7 @@ h1{
     margin-left: 10px;
   }
 .each-project-presentation{
-    margin: 10rem 0;
+    /* margin: 10rem 0; */
     width: 100%;
     height: 100%;
 }
@@ -143,6 +143,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 .intro-text-mini{
     flex: 1;
@@ -163,8 +164,8 @@ h1{
 
 .intro-sec-two{
     flex: 1;
+    height: 100%;
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,8 +173,13 @@ h1{
 }
 
 .intro-sec-two img{
+    /* width: 100%; */
     width: 100%;
+    margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
 }
 .intro-sec-two h1{
     display: none;
@@ -290,6 +296,7 @@ h1{
 .each-project-sec-four{
     width: 100%;
     height: 100vh;
+    margin-bottom: 200px;
 }
 .each-p-bg-sec-four{
     width: 70%;
@@ -321,7 +328,7 @@ h1{
 
 .under-title{
     color:var(--meddleblackCC);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-left: 1rem;
@@ -329,7 +336,7 @@ h1{
 }
 .color-chose-color{
     display: flex;
-    background: rgb(51, 51, 51);
+    background: #dce4f3;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -364,7 +371,7 @@ background: #49E390;
 
 
 .intro-sec-four{
-    margin: 3rem 0 0 0;
+    margin: 3rem 0;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -402,9 +409,31 @@ background: #49E390;
 @media only screen and (max-width: 1024px){
     .intro-sec-two{
         width: 90%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
     }
-    .intro-sec-two video{
-        width: 50%;
+    .each-p-bg-sec-two{
+        flex-direction: column;
+        width: 100%;
+    }
+    .intro-text-mini{
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    
+    .intro-sec-two img{
+        width: 100%;
+        position: absolute;
+        filter: blur(5px);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.5;
     }
 
     .slide-imgs{
@@ -413,20 +442,69 @@ background: #49E390;
     .each-project-sec-three{
         height: fit-content;
     }
+    .intro-sec-three{
+        background: var(--lightPink);
+        padding: 1rem;
+        border-radius: 5px;
+
+    }
     .intro-sec-three .title-sec-three{
         font-size: 2rem;
     }
     .intro-sec-three .desc-sec-three{
         font-size: 0.8rem;
+        color: var(--darkCC);
     }
     .each-p-bg-sec-four{
         width: 80%;
 
     }
+    
 }
 @media only screen and (max-width: 667px){
-    .intro-sec-two video{
-        border-radius: 20px;
+    
+.each-project-presentation{
+    /* margin: 10rem 0 0 0; */
+    width: 100%;
+    height: 100%;
+}
+.each-p-bg-sec-two{
+    height: 100%;
+    margin: auto;
+}
+.intro-text-mini {
+    position: absolute;
+    height: 100%;
+    margin-top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* background: yellow; */
+}
+.intro-text-mini h1{
+    /* background: red; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100%; */
+    margin: auto;
+    font-size: 2rem;
+}
+    .intro-sec-two{
+        width: 95%;
+    }
+    .intro-sec-two img{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        filter: blur(5px);
+        left: 0;
+        /* background: red; */
+        top: 10%;
+        z-index: 0;
+        /* top: 0; */
+        opacity: 0.5;
     }
     .title-sec-four{
         font-size: 2rem;
@@ -438,9 +516,22 @@ background: #49E390;
         width: 90%;
         margin: auto;
         left: 0;
+        background: var(--lightPink);
+        margin-top: 20px;
+
     }
     .each-project-sec-four{
         height: auto;
+
+    }
+    .each-project-sec-two{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100%; */
+        width: 100%;
+        margin: auto;
 
     }
     .each-project-sec-four{
@@ -465,5 +556,8 @@ background: #49E390;
     .intro-sec-four div{
         width: 90%;
     
+    }
+    .intro-text-mini h1{
+        width: 90%;
     }
 }

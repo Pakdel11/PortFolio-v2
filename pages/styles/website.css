@@ -176,7 +176,7 @@ body{
     position: fixed;
     bottom: 10%;
     left: 5%;
-    z-index: 2;
+    z-index: 10;
 }
 .btnWorks:hover,
 .btnWorks:active,
