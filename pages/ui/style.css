@@ -489,7 +489,7 @@ background: #49E390;
     /* align-items: center; */
     /* height: 100%; */
     margin: auto;
-    font-size: 2rem;
+    font-size: 3rem;
 }
     .intro-sec-two{
         width: 95%;
@@ -548,7 +548,7 @@ background: #49E390;
     }
     .intro-sec-four{
         margin: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .intro-sec-four img{
         width: 80%;

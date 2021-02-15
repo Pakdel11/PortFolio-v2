@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background:#120e34;
+    background:#312c51;
     font-family: 'Raleway', sans-serif;
 }
 h1{
@@ -137,7 +137,7 @@ h1{
 
 
 .each-project-sec-two{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 }
 .each-p-bg-sec-two{
@@ -145,7 +145,7 @@ h1{
     height: 100%;
     background: url(img/bg-particals.svg)no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -162,6 +162,7 @@ h1{
     position: relative;
 }
 .intro-sec-two img{
+    height: 80%;
     /* box-shadow: 0px 50px 150px -32px #ffffff27; */
 
 }
@@ -491,7 +492,22 @@ background: #49E390;
 
 
 @media only screen and (max-width: 667px){
-
+    .each-project-sec-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-sec-five, .title-sec-four, .intro-sec-three .title-sec-three{
+        font-size: 2rem;
+    }
+    .each-p-bg-sec-two{
+        height: 80%;
+        margin: auto;
+        /* background: red; */
+        align-items: center;
+        justify-content: flex-start;
+    }
     .each-project-sec-three{
         height: auto;
     }
@@ -520,7 +536,8 @@ background: #49E390;
         width: 100%;
     }
     .each-project-sec-five{
-        margin-top: 200%;
+        /* margin-top: 200%; */
+        margin-top: 3rem;
         height: auto;
     }
     .intro-sec-four img{
