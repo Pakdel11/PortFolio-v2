@@ -623,5 +623,8 @@ background: #49E390;
         margin-top: 20%;
     }
 
+    .intro-text-s .tittle{
+        width: 100%;
+    }
 
 }
