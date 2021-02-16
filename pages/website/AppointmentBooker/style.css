@@ -333,7 +333,7 @@ h1{
 }
 .title-sec-four{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 5rem 0;
     width: 100%;
 }
@@ -359,7 +359,7 @@ h1{
 }
 .color-chose-color{
     display: flex;
-    background: rgb(51, 51, 51);
+    background: none ;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -462,10 +462,79 @@ background: #49E390;
 
 }
 .title-sec-five{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
+
+/* included infos and styles */
+
+.intro-text-s {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+}
+
+
+.intro-text-s .tittle {
+    margin-bottom: 50px;
+    color: snow;
+    width: 80%;
+  }
+  
+  .tittle p {
+    color: var(--meddleblackCC);
+    word-spacing: 2px;
+    line-height: 25px;
+  }
+  
+  .intro-text-s .detailes {
+    margin-bottom: 20px;
+  }
+  
+  .detailes {
+    color: snow;
+}
+    .detailes p{
+      margin-bottom: 0.51rem;
+
+  }
+  
+  .detailes span {
+    font-weight: 520;
+    color: rgb(89, 89, 155);
+  }
+  
+  .intro-text-s .buttons-s {
+    margin: 0 10px 0 0;
+  }
+  
+  .intro-text-s .buttons-s .btn-f {
+    text-decoration: none;
+    border: 2px solid #eeee;
+    color: #eee;
+    padding: 12px 32px;
+    border-radius: 3px;
+  }
+  
+  .intro-text-s .buttons-s .btn-f:hover {
+    background: #0e0e41;
+    color: #999;
+  }
+  
+  .intro-text-s .buttons-s .btn-s {
+    text-decoration: none;
+    background: #181842;
+    padding: 12px 32px;
+    border-radius: 3px;
+    color: white;
+  }
+  
+  .intro-text-s .buttons-s .btn-s:hover {
+    background: #0e0e41;
+    color: #666;
+  }
+  
 
 
 @media only screen and (max-width: 1024px){
@@ -502,7 +571,7 @@ background: #49E390;
         font-size: 2rem;
     }
     .each-p-bg-sec-two{
-        height: 80%;
+        height: 20%;
         margin: auto;
         /* background: red; */
         align-items: center;
