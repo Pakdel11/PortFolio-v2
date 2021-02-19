@@ -27,10 +27,7 @@
         width: 100%;
         opacity: 0.5;
     }
-    /* menu */
-    .menu-open{
-        width: 100%;
-    }
+    
     /* scroll */
     .scroll{
         width: 100%;
@@ -148,6 +145,17 @@
     .shape2,
     .shape6{
         right: 10%;
+    }
+    /* menu */
+    .menu-open{
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 40vh;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    
     }
     /* intro text and animation background */
     .details-intro-sec{
@@ -348,5 +356,14 @@
     .higher-cont{
         width: 90%;
         
+    }
+
+    .switch-cont{
+        /* top: 10%; */
+        left: auto;
+        right: 0;
+        bottom: 5%;
+        transform: translate(-50%);
+
     }
 }
