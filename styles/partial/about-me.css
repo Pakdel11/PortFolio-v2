@@ -5,12 +5,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(/sourcefile/nedladdning.png);
-    background-size: 30px;
-
+    
 }
 
 .bg-abme{
+    background: url(/sourcefile/nedladdning.png);
+    background-size: 10px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -41,6 +41,7 @@
     letter-spacing: 1px;
     word-spacing: 4px;
     line-height: 2em;
+    /* width: ; */
 }
 
 .prgf-me{

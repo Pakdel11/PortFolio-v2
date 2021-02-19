@@ -89,7 +89,8 @@
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition:all 0.1s;
+    /* transition:all 0.1s; */
+    transition:all 1s cubic-bezier(0.68, -0.85, 0.265, 2);
 }
 
 .transferBtn{

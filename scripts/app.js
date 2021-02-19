@@ -15,11 +15,13 @@ function scrollFunction() {
   if (window.pageYOffset > 100) {
     if (!btnWork.classList.contains("transferBtn")) {
       btnWork.classList.add("transferBtn");
+       document.querySelector(".switch-cont").classList.add("switchchange");
     }
     
   }else if(window.pageYOffset <= 100){
     if (btnWork.classList.contains("transferBtn")) {
       btnWork.classList.remove("transferBtn");
+      document.querySelector(".switch-cont").classList.remove("switchchange");
     }
   }
   if (window.pageYOffset > 300) {
@@ -28,6 +30,7 @@ function scrollFunction() {
       backToTop.classList.remove("btnExit");
       logoTextI.style.cssText = "opacity: 0; margin-left: -20%;";
       logoTextII.style.cssText = "opacity: 0;margin-left: -20%;";
+      document.querySelector(".switch-cont").classList.add("switchchange");
       setTimeout(function () {
         backToTop.style.display = "block";
       }, 250);
@@ -103,21 +106,33 @@ function switchThem(){
   var topBtn = document.getElementById("topBtn");
   var logo = document.querySelector(".logo");
   var toggleSwitch = false;
+  var logotext = document.querySelectorAll("#logotext");
   
   switchBtn.addEventListener("click", ()=>{
     if (toggleSwitch == false) {
       document.body.style.background = "var(--whiteCC)";
       topBtn.style.cssText = "background: var(--bgCC);";
+      document.getElementById("blackl").style.display = "flex";
+      document.getElementById("whitel").style.display = "none";
+      document.querySelector(".text-switch").style.cssText = "color:var(--blueblackCC);";
+      for (let i = 0; i < logotext.length; i++) {
+        logotext[i].style.cssText = "color: var(--blueblackCC);";
+      }
       // for (let i = 0; i < logo.length; i++) {
-      //   logo[i].classList.add("nunactive-logo");
-      // }
-      
-      toggleSwitch = true
-    }
-    else if(toggleSwitch == true){
-      topBtn.style.cssText = "background: none;";
-      document.body.style.background = "var(--bgCC)";
-      toggleSwitch = false
+        //   logo[i].classList.add("nunactive-logo");
+        // }
+        
+        toggleSwitch = true
+      }
+      else if(toggleSwitch == true){
+        topBtn.style.cssText = "background: none;";
+        document.body.style.background = "var(--bgCC)";
+        document.getElementById("whitel").style.display = "flex";
+        document.getElementById("blackl").style.display = "none";
+        for (let i = 0; i < logotext.length; i++) {
+          logotext[i].style.cssText = "color: var(--whiteCC);";
+          document.querySelector(".text-switch").style.cssText = "color:var(--whiteCC);";
+         }toggleSwitch = false
     }
   })
 }

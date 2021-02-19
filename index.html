@@ -24,10 +24,11 @@
             <div class="screen"></div>
             <div class="header-dtl">
                 <a href="#" class="logo-container">
-                    <img class="logo" src="sourcefile/logoPakdel-dark-them.png" alt="logo"/>
+                    <img class="logo" id="blackl" style="display: none;" src="sourcefile/logoPakdel-dark-them.png" alt="logo"/>
+                    <img class="logo" id="whitel" src="sourcefile/logoPakdel.png" alt="logo"/>
                     <div class="text-logo">
-                        <h1 class="logoTl">DevStud</h1>
-                        <p class="logoUtl">Dv&Dn artist.</p>
+                        <h1 id="logotext" class="logoTl">DevStud</h1>
+                        <p id="logotext" class="logoUtl">Dv&Dn artist.</p>
                     </div>
                 </a>
                 <div class="toggle-menu">
@@ -42,11 +43,7 @@
                 <a href="#" class="menu-link">HOME</a>
                 <a href="#works" class="menu-link">WORKS</a>
                 <a href="#footer" class="menu-link">CONTACT</a>
-                <p class="text-switch">Light Theme </p>
-                <div class="switch-cont">
-                    <input type="checkbox" hidden="hidden" id="username">
-                    <label class="switch" for="username"></label>
-                </div>
+                
             </div>
         </div> 
     <!-- animation -->
@@ -61,7 +58,14 @@
             <div class="shapes shape8"></div>
         </div>
         <!-- switch btn -->
-        
+        <div class="switch-cont">
+                <p class="text-switch">Light Theme </p>
+                <div class="thebtn">
+
+                    <input type="checkbox" hidden="hidden" id="username">
+                    <label class="switch" for="username"></label>
+                </div>
+            </div>
         <!-- sections -->
         <div class="sections-container">
             <!-- section -->
@@ -137,7 +141,7 @@
                                 
                             </div>
                         </a>
-                        <a href="" class="graphic-intro-icon each rellax" data-rellax-mobile-speed="0.1" data-rellax-speed="-2">
+                        <a class="graphic-intro-icon each rellax" data-rellax-mobile-speed="0.1" data-rellax-speed="-2">
                             <div class="overlay-each-ddd-prj">
                                 <div class="particles-ddd-prj"></div>
                                 
@@ -166,8 +170,8 @@
                                     <img src="pages/website/AppointmentBooker/img/prj/case-show-app-s.PNG" alt="" class="img-project">
                                     <div class="overlay-project"></div>
                                     <div class="test-details-project rellax" data-rellax-mobile-speed="0.5" data-rellax-speed="0.8">
-                                        <h2 class="project-name">Smart Appointment Booker</h2>
-                                        <p>An online booking system is where you upload your meeting time on the table for your customers
+                                        <h2 class="project-name">Appointment Booker application</h2>
+                                        <p>An online appointment booker app is where you can upload meeting time on the table for your customers
                                              <a style="color: var(--pinkCC); text-decoration:none; font-size: 1rem;" 
                                              href="pages/website/AppointmentBooker/index.html"">Read more...</a> </p>
                                         <div class="project-links">
@@ -184,13 +188,14 @@
                                 <img src="/sourcefile/projects/ui-min.png" alt="" class="img-project">
                                 <div class="overlay-project"></div>
                                 <div class="test-details-project rellax" data-rellax-mobile-speed="0.5" data-rellax-speed="0.8">
-                                    <h2 class="project-name">UI Restaurant Searcher Design</h2>
-                                    <p>Description (optional) </p>
+                                    <h2 class="project-name">Restaurant Searcher Ui Design</h2>
+                                    <p>No description </p>
                                     <div class="project-links">
                                         <!-- <a href="#" id="links-prj"><i class="fab fa-github"></i> Github</a> -->
                                         <a href="pages/ui/mini-ui.html" id="live-prj"><i class="fas fa-eye"></i> View Project</a>
                                     </div>    
                                 </div>
+                            </a>
                             </a>
 
                             </div>
@@ -227,7 +232,7 @@
             </section> -->
             <!-- section -->
             <section id="about" class="aboutMe">
-                <h1 id="myName" class="ab-an">Introduction</h1>
+                <!-- <h1 id="myName" class="ab-an">Introduction</h1> -->
                 <div class="bg-abme ab-an">
                     <div class="intro-abme">
                         <div class="intro-img-abme ab-an">
@@ -240,10 +245,12 @@
                                 <div id="settat"></div>
                                 <div id="settat"></div>
                             </div>
-                            <p class="an-p">I design unique web graphic and gfx arts.<br> My passion is to craeting, designing and developing awesome projects.<br>
+                            <p class="an-p"> 
+                                <span style="font-size: 2rem; font-weight: 600; color: var(--whiteCC);">Hi,</span>
+                                <br> My name is Habib, I'm a student of webdeveloper, computer games, and programming in NTI-highschool. <br>I design unique web graphic and gfx arts.<br> My passion is to craeting, designing and developing awesome projects.<br>
                             </p>
                             <div class="btns-cv">
-                                <a href="sourcefile/resume/theresume.pdf" download class="download-resume">Download Resume</a>
+                                <a href="sourcefile/resume/cv.pdf" download class="download-resume">Download Resume</a>
                                 <a href="https://github.com/Pakdel11" target="_blank" class="anime btnGithub"><i class="fab fa-github"></i></a>
                                 <a href="https://twitter.com/home" target="_blank" class="anime btnTwitter"><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.behance.net/pakdelstudio" target="_blank" class="anime btnBehance"><i class="fab fa-behance"></i></a>
@@ -264,9 +271,12 @@
             <div class="bg-footer">
                 <div class="intro-footer">
                     <div class="footer-text fade-footer">
-                        <h1>I'd love to hear from you.</h1>
-                        <p class="desc-footer-text">I am happy to hear from you. I am always open for new projects worldwide!
-                            Would you like to have award winning site or unique branding style, please say hi to my business email: <span style="text-decoration: underline; text-decoration-color: var(--pink);"> habib.pakdel1121@gmail.com</span> or fill the form down below.
+                        <h1>Let's talk!</h1>
+                        <p class="desc-footer-text">I am always open for new projects!
+                            Would you like to have award winning site or unique branding style, 
+                            feel free to say hi to my email: 
+                            <span style="text-decoration: underline; text-decoration-color: var(--pink);"> 
+                                habib.pakdel1121@gmail.com</span> or fill the form down below.
                             And I will help you with the pleasure.</p>
                     </div>
                     <div class="footer-contact fade-footer">
@@ -306,14 +316,14 @@
                             
                             </div>
                             <h1>Or</h1>
-                            <p>070 744 65 35</p>
+                            <div>070 744 65 35</div>
                             <p>habib.pakdel1121@gmail.com</p>
                         </div>
                     </div>    
                       
                 </div>
                 <div class="footer-developed">
-                        <p> Developed | 2020 &copy; Habib </p>
+                        <p> Developed | 2020 &copy; DevStud </p>
                 </div>  
             </div>
         </div>    
