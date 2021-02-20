@@ -10,6 +10,15 @@
 //////
 
 */
+@media only screen and (max-width: 1500px){
+    .items-ddd-prj .each{
+        width: 20%;
+        height:250px;
+    }
+    .bg-s-one{
+        background-attachment: fixed;
+    }
+}
 
 
 @media only screen and (max-width: 1024px){
@@ -60,11 +69,14 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 10%;
     }
+    .items-ddd-prj .each{
+        width: 100%;
+    }
 
 
     /* latest project section */
     .intro-text-s-one{
-        width: 90%;
+        width: 80%;
     }
     #primary-title-sections{
         font-size: 2.5rem;
@@ -106,6 +118,9 @@
     .download-resume {
         width: 100%;
     
+    }
+    .pfp{
+        display: none;
     }
 
     /*  footer */
@@ -203,7 +218,16 @@
         bottom: 2%;
         margin: 0;
     }
-    
+    .transferBtn{
+        position: fixed;
+        transition: 0.3s;
+        left: 0;
+        margin-left: 0;
+        margin-bottom: 0%;
+        border-radius: 0 50px 50px 0;
+        z-index: 10;
+        transition:all 1s cubic-bezier(0.68, -0.85, 0.265, 2);
+    }
     .logoTl{
         font-size: 1rem;
     }
@@ -242,13 +266,17 @@
     /* divided projects section */
     .divided-project{
         width: 90%;
-        height: auto;
-        margin-bottom: 100px;
+        margin: 0 auto;
+        height: 100%;
+        /* margin: 100px; */
 
     }
     .bg-ddd-prj{
         width: 100%;
-        height: 220vh;
+        height: 200vh;
+    }
+    .intro-ddd-prj{
+        width: 90%;
     }
     .items-ddd-prj{
         width: 100%;
@@ -266,7 +294,9 @@
         margin: 0.5rem 1rem 2rem 1rem;
         box-shadow: none;
     }
-
+    .items-ddd-prj .each{
+        width: auto;
+    }
     /* latest projects section */
     .aboutMe{
         height: auto;
@@ -275,6 +305,9 @@
     #primary-title-sections{
         font-size: 2.5rem;
         filter: blur(2px);
+    }
+    .bg-abme{
+        width: 90%;
     }
     .bg-s-one{
         width: 95%;
@@ -338,7 +371,14 @@
         position: relative;
         width: 90%;
         height: 100%;
-        margin: 50px auto;
+        margin: 50px auto 100px;
+        align-items: center;
+        text-align: center;
+        /* margin-bottom: 100px; */
+    }
+    .footer-developed p{
+        text-align: center;
+        width: 100%;
     }
     .info-footer p{
         color: var(--meddleblackCC);

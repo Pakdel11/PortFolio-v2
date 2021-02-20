@@ -15,13 +15,13 @@ function scrollFunction() {
   if (window.pageYOffset > 100) {
     if (!btnWork.classList.contains("transferBtn")) {
       btnWork.classList.add("transferBtn");
-       document.querySelector(".switch-cont").classList.add("switchchange");
+      //  document.querySelector(".switch-cont").classList.add("switchchange");
     }
     
   }else if(window.pageYOffset <= 100){
     if (btnWork.classList.contains("transferBtn")) {
       btnWork.classList.remove("transferBtn");
-      document.querySelector(".switch-cont").classList.remove("switchchange");
+      // document.querySelector(".switch-cont").classList.remove("switchchange");
     }
   }
   if (window.pageYOffset > 300) {
@@ -30,7 +30,7 @@ function scrollFunction() {
       backToTop.classList.remove("btnExit");
       logoTextI.style.cssText = "opacity: 0; margin-left: -20%;";
       logoTextII.style.cssText = "opacity: 0;margin-left: -20%;";
-      document.querySelector(".switch-cont").classList.add("switchchange");
+      // document.querySelector(".switch-cont").classList.add("switchchange");
       setTimeout(function () {
         backToTop.style.display = "block";
       }, 250);
@@ -107,6 +107,8 @@ function switchThem(){
   var logo = document.querySelector(".logo");
   var toggleSwitch = false;
   var logotext = document.querySelectorAll("#logotext");
+  var inputName = document.querySelector(".content-name");
+  var inputMsg = document.querySelector(".content-psd");
   
   switchBtn.addEventListener("click", ()=>{
     if (toggleSwitch == false) {
@@ -118,6 +120,8 @@ function switchThem(){
       for (let i = 0; i < logotext.length; i++) {
         logotext[i].style.cssText = "color: var(--blueblackCC);";
       }
+      inputMsg.style.cssText = "color: var(--bgCC);";
+      inputName.style.cssText = "color: var(--bgCC);";
       // for (let i = 0; i < logo.length; i++) {
         //   logo[i].classList.add("nunactive-logo");
         // }
@@ -125,6 +129,8 @@ function switchThem(){
         toggleSwitch = true
       }
       else if(toggleSwitch == true){
+        inputMsg.style.cssText = "color: var(--whiteCC);";
+        inputName.style.cssText = "color: var(--whiteCC);";
         topBtn.style.cssText = "background: none;";
         document.body.style.background = "var(--bgCC)";
         document.getElementById("whitel").style.display = "flex";

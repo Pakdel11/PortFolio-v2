@@ -136,7 +136,7 @@
     transition: top 0.8s;
     display: none;
     transition: 0.2s;
-    background: rgba(0, 0, 0, 0.315);
+    background: var(--lightPink);
     padding: 5px;
     border-radius: 50px;
     z-index: 10;
@@ -184,8 +184,8 @@
 }
 
 ::selection {
-    color: var(--white);
-    background: var(--darkPink);
+    color: var(--whiteCC);
+    background: var(--lightPink);
   }
 
   

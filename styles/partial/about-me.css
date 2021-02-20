@@ -1,6 +1,8 @@
 .aboutMe{
     position: relative;
-    height: 80vh;
+    height: fit-content;
+    margin: 4rem 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,14 +11,19 @@
 }
 
 .bg-abme{
-    background: url(/sourcefile/nedladdning.png);
-    background-size: 10px;
+    background: url(/sourcefile/nedladdning.png)center/cover;
+    background-size: 30px;
+    -o-background-size: 10px;
+    -moz-background-size: 10px;
+    -webkit-background-size: 10px;
+    /* background-attachment: fixed; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 70%;
+    min-height: fit-content;
     
 }
-
 
 #myName{
     color: var(--blueblackCC);
@@ -33,6 +40,7 @@
     margin: auto;
 }
 .intro-text-abme{
+    flex: 2;
     padding: 4rem;
     border-radius: 15px;
 }
@@ -78,6 +86,7 @@
     margin-bottom: 1rem;
 }
 .intro-img-abme{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
