@@ -54,9 +54,6 @@
 }
 .DeveloperS span{
     color: var(--blueblackCC);
-}.an-p{
-    margin-bottom: 1rem;
-    color: var(--meddleDarkFont);
 }
 
 @keyframes deley{

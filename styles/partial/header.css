@@ -39,9 +39,7 @@
     justify-content: flex-start;
     margin-left: 1rem;
 }
-#logotext{
-    color: var(--whiteCC);
-}
+
 .logoTl{
     transition: 0.2s ;
     margin: 0;

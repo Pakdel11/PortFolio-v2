@@ -7,15 +7,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.3s;
     
 }
 
 .bg-abme{
-    background: url(/sourcefile/nedladdning.png)center/cover;
-    background-size: 30px;
-    -o-background-size: 10px;
-    -moz-background-size: 10px;
-    -webkit-background-size: 10px;
+    background: url(/sourcefile/nedladdning.png);
+    background-size: 20px;
+    -o-background-size: 20px;
+    -moz-background-size: 20px;
+    -webkit-background-size: 20px;
     /* background-attachment: fixed; */
     display: flex;
     align-items: flex-start;
@@ -45,7 +46,7 @@
     border-radius: 15px;
 }
 .an-p{
-    color: var(--meddleDarkFont);
+    color: var(--bgCC);
     letter-spacing: 1px;
     word-spacing: 4px;
     line-height: 2em;

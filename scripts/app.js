@@ -12,12 +12,33 @@ window.addEventListener("scroll", scrollFunction);
 
 
 function scrollFunction() {
+
+  // console.log(pageYOffset)
+  // if (pageYOffset >= 3100) {
+  //   document.querySelector(".aboutMe").style.cssText = 
+  //   "background: linear-gradient(120deg, var(--lightPink), var(--lilaCC)); transition: 0.3s;";
+  //   document.querySelector(".an-p").style.cssText = 
+  //   "font-weith: 600; transition: 0.3s;";
+  // }
+  // if (pageYOffset <= 3100) {
+  //   document.querySelector(".an-p").style.cssText = 
+  //   "color: var(--bgCC); font-weith: 300; transition: 0.3s;";
+  //   document.querySelector(".aboutMe").style.cssText = 
+  //   "background: linear-gradient(120deg, var(--lilaCC), var(--lightPink) ); transition: 0.3s;";
+  // }
+  // if (pageYOffset >= 3860) {
+  //   document.querySelector(".an-p").style.cssText = 
+  //   "color: var(--bgCC); font-weith: 300; transition: 0.3s;";
+  //   document.querySelector(".aboutMe").style.cssText = 
+  //   "background: linear-gradient(120deg, var(--lilaCC), var(--lightPink) ); transition: 0.3s;";
+  // }
+  
   if (window.pageYOffset > 100) {
     if (!btnWork.classList.contains("transferBtn")) {
       btnWork.classList.add("transferBtn");
       //  document.querySelector(".switch-cont").classList.add("switchchange");
     }
-    
+        
   }else if(window.pageYOffset <= 100){
     if (btnWork.classList.contains("transferBtn")) {
       btnWork.classList.remove("transferBtn");
@@ -104,7 +125,7 @@ menu();
 function switchThem(){
   var switchBtn = document.getElementById("username");
   var topBtn = document.getElementById("topBtn");
-  var logo = document.querySelector(".logo");
+  // var logo = document.querySelector(".logo");
   var toggleSwitch = false;
   var logotext = document.querySelectorAll("#logotext");
   var inputName = document.querySelector(".content-name");
@@ -112,33 +133,39 @@ function switchThem(){
   
   switchBtn.addEventListener("click", ()=>{
     if (toggleSwitch == false) {
+      // topBtn.style.cssText = "background: none;";
+      
+      document.body.style.background = "var(--bgCC)";
+      document.getElementById("whitel").style.display = "flex";
+      document.getElementById("blackl").style.display = "none";
+      document.querySelector(".an-p").style.cssText = "color: var(--whiteCC);";
+      for (let i = 0; i < logotext.length; i++) {
+        logotext[i].style.cssText = "color: var(--whiteCC);";
+        document.querySelector(".text-switch").style.cssText = "color:var(--whiteCC);";
+      }
+      toggleSwitch = true
+    }
+    else if(toggleSwitch == true){
+      
+      document.querySelector(".an-p").style.cssText = "color: var(--bgCC);";
       document.body.style.background = "var(--whiteCC)";
-      topBtn.style.cssText = "background: var(--bgCC);";
+      // topBtn.style.cssText = "background: var(--bgCC);";
       document.getElementById("blackl").style.display = "flex";
       document.getElementById("whitel").style.display = "none";
       document.querySelector(".text-switch").style.cssText = "color:var(--blueblackCC);";
       for (let i = 0; i < logotext.length; i++) {
         logotext[i].style.cssText = "color: var(--blueblackCC);";
       }
-      inputMsg.style.cssText = "color: var(--bgCC);";
-      inputName.style.cssText = "color: var(--bgCC);";
       // for (let i = 0; i < logo.length; i++) {
         //   logo[i].classList.add("nunactive-logo");
         // }
         
-        toggleSwitch = true
-      }
-      else if(toggleSwitch == true){
-        inputMsg.style.cssText = "color: var(--whiteCC);";
-        inputName.style.cssText = "color: var(--whiteCC);";
-        topBtn.style.cssText = "background: none;";
-        document.body.style.background = "var(--bgCC)";
-        document.getElementById("whitel").style.display = "flex";
-        document.getElementById("blackl").style.display = "none";
-        for (let i = 0; i < logotext.length; i++) {
-          logotext[i].style.cssText = "color: var(--whiteCC);";
-          document.querySelector(".text-switch").style.cssText = "color:var(--whiteCC);";
-         }toggleSwitch = false
+        toggleSwitch = false
+
+
+
+
+        
     }
   })
 }

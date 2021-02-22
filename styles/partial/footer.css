@@ -140,7 +140,8 @@
     position: absolute;
     bottom: 12%;
     left: 2%;
-    color: var(--white);
+    color: var(--whiteCC);
+    /* color: var(--meddleblackCC); */
     font-weight: 300;
 }
 .password label span{
@@ -149,7 +150,7 @@
     top: 25%;
     left: 2%;
     font-weight: 300;
-    color: var(--white);
+    color: var(--whiteCC);
 }
 
 .username input:focus + .label-name .content-name,
@@ -157,6 +158,7 @@
     transform: translate(-20%, -180%);
     transition: 0.3s;
     font-weight: bolder;
+    color: var(--lightPink);
     font-weight: 500;
     
 }
@@ -164,6 +166,7 @@
 .password textarea:focus + .label-psd .content-psd,
 .password textarea:valid + .label-psd .content-psd{
     transform: translate(-10%, -210%);
+    color: var(--lightPink);
     transition: 0.3s;
     font-weight: 600;
     font-weight: 500;

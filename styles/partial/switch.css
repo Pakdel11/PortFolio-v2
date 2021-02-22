@@ -14,7 +14,7 @@
     flex-direction: column;
 }
 .text-switch{
-    color: var(--whiteCC);
+    color: var(--meddleblackCC);
     margin: 1rem 0;
 }
 .switchchange{
