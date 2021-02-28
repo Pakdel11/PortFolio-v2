@@ -132,13 +132,13 @@ h1{
 
 
 .each-project-sec-two{
-    height: 100vh;
+    height: 60vh;
     width: 100%;
 }
 .each-p-bg-sec-two{
     background: url(img/bg-particals.svg)no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,6 +155,7 @@ h1{
     margin: auto;
     width: 60%;
     font-size: 4rem;
+    text-align: right;
     font-weight: 700;
     background: -webkit-linear-gradient(var(--pinkCC), var(--darkPink));
     -webkit-background-clip: text;
@@ -201,6 +202,172 @@ h1{
     padding: 1rem 2rem;
     font-size: 1rem;
 }
+
+
+
+/* 
+/////////
+
+        image slider
+
+/////////
+*/
+
+.prev-cont{
+    width: 100%;
+    margin: auto;
+    background: url(./img/bg-second-sec.svg)no-repeat, center;
+    background-size: cover;
+}
+
+.bg-prev{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.intro-prev{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.top-line{
+    width: 40px;
+    height: 5px;
+    background: var(--lightPink);
+}
+.intro-prev h1{
+    font-size: 3rem;
+    color: var(--meddleDarkFont);
+}
+.content-prev{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--whiteCC);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+  background: var(--lightyellowCC);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 30%;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 30%;
+    /* left: 0; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--lightPink);
+  color: var(--white);
+}
+
+/* Caption text */
+.text {
+  color: var(--blueblackCC);
+  font-size: 15px;
+  position: absolute;
+  padding: 1rem;
+  top: 0%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.644);
+  text-align: center;
+  /* bottom: 8px; */
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+.mySlides:hover > .text{
+    opacity: 1;
+}
+.mySlides{
+    position: relative;
+    box-shadow: 0 20px 50px -12px rgba(137, 43, 226, 0.247);
+
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--blueblackCC);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--lightPink);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 /* 
 /////////
 
@@ -296,7 +463,6 @@ h1{
 .each-project-sec-four{
     width: 100%;
     height: 100vh;
-    margin-bottom: 200px;
 }
 .each-p-bg-sec-four{
     width: 70%;
@@ -304,14 +470,22 @@ h1{
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
+.ttl{
+    margin-top: 5rem;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .title-sec-four{
     color:var(--meddleblackCC);
     font-size: 3rem;
-    margin: 5rem;
     width: 100%;
 }
 .color-chose-sec-four{
@@ -398,11 +572,95 @@ background: #49E390;
 /////
 /////
 
-    absolute btn
+    swipe js
 
 /////
 /////
 */
+
+
+
+/* 
+/////
+/////
+
+    footer
+
+/////
+/////
+*/
+
+footer{
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    background: url(./img/bg-footer.svg)no-repeat, rgb(232, 235, 248);
+    background-size: cover;
+}
+.content-ft{
+
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ttl-ft{
+    font-size: 2.5rem;
+    color: var(--blackCC);
+    font-weight: 600;
+}
+.utl-ft{
+    color: var(--meddleblackCC);
+    font-size: 16px;
+}
+
+.hire-btn{
+    background: linear-gradient(90deg, #F073C8 0%, #FF6A95 99%);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+    position: relative;
+}
+
+.hire-btn i {
+    /* margin-right: -30px; */
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 30%;
+    /* right: 5%; */
+    height: 100%;
+    position: absolute;
+    animation: hire 2s infinite linear;
+}
+
+.hire-btn:hover{
+    background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
+    transition: 0.3s;
+}
+
+@keyframes hire {
+    0%{
+        left: 40%;
+    }
+    50%{
+        left: 45%;
+    }
+    100%{
+        left: 40%;
+    }
+}
+
+
 
 
 
@@ -412,6 +670,20 @@ background: #49E390;
         height: 100vh;
         margin: 0;
         padding: 0;
+    }
+    .next{
+        right: 10%;
+    } 
+    .prev{
+        left: 10%;
+        
+    }
+    .intro-sec-four{
+        width: 100%;
+        display: flex;
+    }
+    .intro-sec-four img{
+        width: 300px;
     }
     .each-p-bg-sec-two{
         flex-direction: column;
@@ -463,6 +735,28 @@ background: #49E390;
 }
 @media only screen and (max-width: 667px){
     
+    
+
+    /* included slide image  */
+    
+    .mySlides{
+        width: 80%;
+    }
+    .next {
+        right: 0%;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev{
+          border-radius: 3px 0 0 3px;
+          left: 0%;
+          /* left: 0; */
+      }
+
+
+      .each-p-bg-sec-four{
+        width: 100%;
+
+    }
 .each-project-presentation{
     /* margin: 10rem 0 0 0; */
     width: 100%;
@@ -471,6 +765,10 @@ background: #49E390;
 .each-p-bg-sec-two{
     height: 100%;
     margin: auto;
+}
+
+.under-title{
+    width: 88%;
 }
 .intro-text-mini {
     position: absolute;
@@ -525,7 +823,7 @@ background: #49E390;
 
     }
     .each-project-sec-two{
-        height: 100vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -548,6 +846,7 @@ background: #49E390;
     }
     .intro-sec-four{
         margin: 0;
+        width: 100%;
         flex-direction: column-reverse;
     }
     .intro-sec-four img{
@@ -559,5 +858,28 @@ background: #49E390;
     }
     .intro-text-mini h1{
         width: 90%;
+    }
+
+
+
+    /* footer */
+
+    .content-ft{
+        width: 90%;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-around;
+    }
+
+    .hire-btn i{
+        animation: none;
+        position: absolute;
+        margin-left: 80px;
+        color: var(--lightPink);
+        
+    }
+    .hire-btn{
+
+        width: 100%;
     }
 }
