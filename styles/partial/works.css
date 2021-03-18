@@ -178,7 +178,7 @@
     align-items: center;
     position: relative;
     margin: 0 1rem 10rem 0;
-    animation: workflow 2s infinite linear;
+    /* animation: workflow 2s infinite linear; */
 
 }
 

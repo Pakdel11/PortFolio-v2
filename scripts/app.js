@@ -173,3 +173,36 @@ function switchThem(){
 switchThem();
 
 
+
+
+
+// email sender AJX
+
+var form = document.getElementById("contact");
+var statusBtn = document.getElementById("close_msg");
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("result-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        statusBtn.style.cssText = "opacity: 1;";
+        status.innerHTML = "Thanks for your submission!";
+        status.classList.add('succeed_form');
+        form.reset()
+      }).catch(error => {
+        statusBtn.style.cssText = "opacity: 1;";
+        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.classList.add('error_form');
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+
+statusBtn.addEventListener("click", ()=>{
+  document.getElementById("result-status").style.cssText = "opacity: 0; display: none;";
+})
