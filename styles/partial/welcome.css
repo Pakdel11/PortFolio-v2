@@ -126,7 +126,7 @@
 .download-resume{
     background: var(--blueblackCC);
     padding: 0.5rem 2rem;
-    color: var(--white);
+    color: var(--whiteCC);
     text-decoration: none;
 }
 .download-resume:hover{
