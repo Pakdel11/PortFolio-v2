@@ -69,7 +69,7 @@ h1{
     position: fixed;
     bottom: 10%;
     left: 5%;
-    z-index: 2;
+    z-index: 5;
     transform: rotate(180deg);
 }
 .btnWorks:hover,
@@ -550,6 +550,7 @@ background: #49E390;
 /////
 */
 
+
 footer{
     width: 100%;
     height: 50vh;
@@ -607,8 +608,17 @@ footer{
     background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 99%);
     transition: 0.3s;
 }
-
-
+@keyframes hire {
+    0%{
+        left: 40%;
+    }
+    50%{
+        left: 45%;
+    }
+    100%{
+        left: 40%;
+    }
+}
 @media only screen and (max-width: 1024px){
 
     .intro-sec-two img{
