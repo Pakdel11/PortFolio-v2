@@ -117,6 +117,18 @@
     transition: 0.3s;
     
 }
+.btnGithub{
+    color: #4078c0;
+}
+.btnBehance{
+    color: #053eff;
+}
+.btnTwitter{
+    color: #00acee;
+}
+.btnIn{
+    color: #0e76a8;
+}
 
 .btnWorks .btn-vct{
   opacity: 0;
